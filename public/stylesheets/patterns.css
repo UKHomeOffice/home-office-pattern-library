@@ -1,0 +1,22 @@
+.check-your-answers td {
+  font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: none;
+  font-size-adjust: 0.5;
+  vertical-align: top;
+}
+
+@media (min-width: 641px) {
+  .check-your-answers td {
+    font-size: 19px;
+    line-height: 1.3157894737;
+  }
+}
+
+.check-your-answers .change-answer {
+  text-align: right;
+  font-weight: bold;
+  padding-right: 0;
+}

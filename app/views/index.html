@@ -8,12 +8,41 @@ GOV.UK prototype kit
 
 
 <main id="content" role="main">
-  <div class="grid-row">
-    <div class="column-two-thirds">
 
-      <h1 class="heading-xlarge">HOD Pattern Library</h1>
+<h1 class="heading-xlarge">Home Office Pattern Library</h1>
 
-      <p>This pattern library contains patterns developed uniquely for Home Office services by researchers, designers and developers within Home Office Digital.</p>
+<div class="grid-row">
+
+    <div class="column-one-quarter browse-panes">
+    <!-- tab headings go here -->
+      <ul class="tab">
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'account_creation')">Account creation</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'alerts')">Alerts & warnings</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'button_variants')">Button variants</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'date_picker')">Date picker</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'disabled_states')">Disabled states</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'filters')">Filters</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'gestures')">Gestures</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'headers')">Headers</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'navigation')">Navigation</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'notifications')">Notifications</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'password_reset')">Password reset</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'search_results')">Search results</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'searching')">Searching</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'tables')">Tables</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'tagging')">Tagging</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'task_lists')">Task lists</a></li>
+        <hr class="no-margins">
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'colour_palette')">Colour palette</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'iconography')">Iconography</a></li>
+        <li><a href="#/" class="tablinks" onclick="showPattern(event, 'sketch_templates')">Sketch templates</a></li>
+        <!-- <li><a href="#/" class="tablinks disabled" onclick="showPattern(event, 'Completion')">Completion</a></li> -->
+      </ul>
+    </div>
+
+    <div class="column-three-quarters" id="content-area">
+      <div id="Case Data" class="tabcontent" >
+        <p>This pattern library contains patterns developed uniquely for Home Office services by researchers, designers and developers within Home Office Digital.</p>
 
       <p>These patterns complement the existing GOV.UK design patterns.</p>
 
@@ -48,6 +77,9 @@ GOV.UK prototype kit
           </ul>
 
         <p>If you'd like to submit a pattern <a href="">do this process we need to figure out</a></p>
+       
+      </div>
+
 
     </div>
   </div>
