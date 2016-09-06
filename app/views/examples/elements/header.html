@@ -1,0 +1,166 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+Example - Headers
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  {% include "includes/breadcrumb_examples.html" %}
+
+  <div class="pattern-intro-contents">
+    <h2 class="heading-large">Pattern/Element name</h2>
+
+  <p class="lede">Include a one sentence description of the pattern here</p>
+  <h4 class="heading-small">On this page:</h3>
+    <ol type="1">
+      <li><a href="#Version-1">Pattern v1</a></li>
+      <li><a href="#Version-2">Pattern v2</a></li>
+    </ol>
+    <hr>
+  </div>
+
+    <h3 class="heading-medium" id="Version-1">Pattern v1</h3>
+    <p>
+      Some additional descriptive text can go here if needed.
+    </p>
+
+<div class="example">
+  <div class="grid-row">
+    <header role="banner" id="global-header" class="with-proposition">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="/" title="Go to the homepage" id="logo" class="content">
+              <img src="/public/stylesheets/images/gov.uk_logotype_crown.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="header-proposition">
+          <div class="content">
+            <nav id="proposition-menu" class="header__menu" role="navigation">
+              <a href="/" id="proposition-name">Service name</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>
+
+<h4 class="heading-small">Code</h4>
+<div class="grid-row">
+  <details>
+    <summary><span class="summary">View code snippet</span></summary>
+    <div class="panel panel-border-narrow">
+      <pre class="language-markup">
+        <code>
+          &lt;header role="banner" id="global-header"&gt;
+          &lt;div class="header-wrapper"&gt;
+          &lt;div class="header-global"&gt;
+          &lt;div class="header-logo"&gt;
+          &lt;a href="/" title="Go to the homepage" id="logo" class="content"&gt;
+          &lt;img src="&#123;&#123;asset_path&#125;&#125;images/gov.uk_logotype_crown_invert_trans.png" width="35" height="31" alt=""&gt;
+          &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class="header-proposition"&gt;
+          &lt;div class="content"&gt;
+          &lt;nav id="proposition-menu"&gt;
+          &lt;a href="/" id="proposition-name"&gt;&#123;&#123;serviceName&#125;&#125;&lt;/a&gt;
+          &lt;/nav&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/header&gt;
+        </code>
+      </pre>
+    </div>
+  </div>
+</details>
+
+<h4 class="heading-small">Research</h4>
+<p>Research findings here. We'll keep the content as concise as possible while still conveying useful context.
+<h4 class="heading-small">Accessibility</h4>
+<p>Notes on accessibility testing go here. Just a sentence or two if anything of particular note, or any current known issues.</p>
+
+<h4 class="heading-small">Recommendations</h4>
+<p>This might include guidance on when to use, notes on variations or possible functionality worth considering for inclusion if using on your service.<p>
+
+  <hr>
+
+  <h3 class="heading-medium" id="Version-2">Pattern v2</h3>
+  <p>      Some additional descriptive text can go here if needed.</p>
+</div>
+</div>
+
+<div class="example">
+  <div class="grid-row">
+    <header role="banner" id="global-header" class="with-proposition">
+      <div class="header-wrapper">
+        <div class="header-global">
+          <div class="header-logo">
+            <a href="/" title="Go to the homepage" id="logo" class="content">
+              <img src="/public/stylesheets/images/gov.uk_logotype_crown.png" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="header-proposition">
+          <div class="content">
+            <nav id="proposition-menu" class="header__menu" role="navigation">
+              <a href="/" id="proposition-name">Service name</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+</div>
+
+<h4 class="heading-small">Code</h4>
+<div class="grid-row">
+  <details>
+    <summary><span class="summary">View code snippet</span></summary>
+    <div class="panel panel-border-narrow">
+      <pre class="language-markup">
+        <code>
+          &lt;header role="banner" id="global-header"&gt;
+          &lt;div class="header-wrapper"&gt;
+          &lt;div class="header-global"&gt;
+          &lt;div class="header-logo"&gt;
+          &lt;a href="/" title="Go to the homepage" id="logo" class="content"&gt;
+          &lt;img src="&#123;&#123;asset_path&#125;&#125;images/gov.uk_logotype_crown_invert_trans.png" width="35" height="31" alt=""&gt;
+          &lt;/a&gt;
+          &lt;/div&gt;
+          &lt;div class="header-proposition"&gt;
+          &lt;div class="content"&gt;
+          &lt;nav id="proposition-menu"&gt;
+          &lt;a href="/" id="proposition-name"&gt;&#123;&#123;serviceName&#125;&#125;&lt;/a&gt;
+          &lt;/nav&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;/header&gt;
+        </code>
+      </pre>
+    </div>
+  </div>
+</details>
+
+<h4 class="heading-small">Research</h4>
+<p>Research findings here. We'll keep the content as concise as possible while still conveying useful context.
+
+<h4 class="heading-small">Accessibility</h4>
+<p>Notes on accessibility testing go here. Just a sentence or two if anything of particular note, or any current known issues.</p>
+
+<h4 class="heading-small">Recommendations</h4>
+<p>This might include guidance on when to use, notes on variations or possible functionality worth considering for inclusion if using on your service.<p>
+
+
+
+</main>
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Example - Radio buttons and checkboxes
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+  {% include "includes/breadcrumb_examples.html" %}
+
+  <div class="pattern-intro-contents">
+    <h2 class="heading-large">Radio buttons and checkboxes</h2>
+
+  <p class="lede">These selectors enable users to make choices</p>
+  <h4 class="heading-small">On this page:</h3>
+    <ol type="1">
+      <li><a href="">Radio buttons</a></li>
+      <li><a href="">Checkboxes</a></li>
+    </ol>
+  </div>
+
+<hr>
+
+  <h3 class="heading-medium">Radio buttons</h3>
+
+<div class="example">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+      <form action="/" method="post" class="form">
+        <h2 class="heading-large"> What is your nationality?</h2>
+          <p>If you have dual nationality, select all options that are relevant to you.</p>
+            <div class="form-group">
+              <fieldset>
+                <legend class="visuallyhidden">What is your nationality?</legend>
+                <label for="nationality_british" class="block-label">
+                  <input type="checkbox" name="nationality_british" value="British" id="nationality_british">
+                    British
+                </label>
+
+                <label for="nationality_irish" class="block-label">
+                  <input type="checkbox" name="nationality_irish" value="Irish" id="nationality_irish">
+                    Irish
+                </label>
+
+                <label for="nationality_other" class="block-label" data-target="example_nationality_other">
+                  <input type="checkbox" name="nationality_other" value="Wales" id="nationality_other">
+                    Citizen of another country
+                  </label>
+
+                <div class="panel panel-border-narrow js-hidden" id="example_nationality_other">
+                  <label for="nationality_other_countries" class="form-label">
+                    Country name
+                  </label>
+              <input class="form-control" type="text" id="nationality_other_countries">
+              </div>
+            </fieldset>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<h4 class="heading-small">Code</h4>
+<div class="grid-row">
+  <details>
+  <summary><span class="summary">View code snippet</span></summary>
+  <div class="panel panel-border-narrow">
+    <pre class="language-markup">
+      <code>
+        &lt;header role="banner" id="global-header"&gt;
+        &lt;div class="header-wrapper"&gt;
+        &lt;div class="header-global"&gt;
+        &lt;div class="header-logo"&gt;
+        &lt;a href="/" title="Go to the homepage" id="logo" class="content"&gt;
+        &lt;img src="&#123;&#123;asset_path&#125;&#125;images/gov.uk_logotype_crown_invert_trans.png" width="35" height="31" alt=""&gt;
+        &lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class="header-proposition"&gt;
+        &lt;div class="content"&gt;
+        &lt;nav id="proposition-menu"&gt;
+        &lt;a href="/" id="proposition-name"&gt;&#123;&#123;serviceName&#125;&#125;&lt;/a&gt;
+        &lt;/nav&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;/header&gt;
+      </code>
+    </pre>
+  </div>
+  </details>
+</div>
+
+<h4 class="heading-small">Research</h4>
+<p>Research findings here. We'll keep the content as concise as possible while still conveying useful context.
+
+<h4 class="heading-small">Accessibility</h4>
+<p>Radio buttons with large hit areas are easier to select with a mouse or touch devices.</p>
+<p>Ensure keyboard-only users can navigate and cycle through radio options.
+
+<h4 class="heading-small">Recommendations</h4>
+<p>For more than two options, radio buttons should be stacked.<p>
+
+
+
+    </div>
+  </div>
+</main>
+{% endblock %}
