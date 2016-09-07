@@ -78,6 +78,10 @@ ul.tab li {
   margin-bottom: 0px;
 }
 
+a[href*="#"] {
+    text-decoration: none;
+}
+
 ul.tab li a {
   display: inline-block;
   padding: 14px 16px;
