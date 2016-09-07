@@ -236,11 +236,6 @@ td {
     float: left;
     width: 25%;
   }
-
-  .column-three-quarters {
-    float: left;
-    width: 75%;
-  }
 }
 
 .column-half,
@@ -2085,6 +2080,14 @@ input[type=number] {
   padding-right: 0;
 }
 
+.legal_message {
+  margin: 30px 0 30px;
+  padding-left: 60px;
+  background-image: url(https://assets.digital.cabinet-office.gov.uk/static/icon-important-2x-c948a58b675598f444f7f8fffd9ebf3d740905da332308c65b0dcb4af880d7ba.png);
+  background: url(https://assets.digital.cabinet-office.gov.uk/static/icon-important-aab708504574eda2dc4a4de0802be03dbbd70d57b422de93e55e265c9ae2fc43.png) no-repeat scroll 0 0.5em;
+  background-size: 34px 34px;
+}
+
 .unbranded {
   background: #fff;
 }
@@ -2120,6 +2123,17 @@ input[type=number] {
   margin-top: 2px !important;
 }
 
+.column-three-quarters {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 641px) {
+  .column-three-quarters {
+    float: left;
+    width: 75%;
+  }
+}
 
 ul li {
   margin-bottom: 20px;
@@ -2165,11 +2179,11 @@ ul.tab li a:focus, .active, ul.tab li a.active:hover {
 }
 
 .browse-panes ul.tab li a:after {
-    margin-top: -12px;
-    right: 10px;
-    float: right;
-    font-size: 30px;
-    content: "\203A";
+  margin-top: -12px;
+  right: 10px;
+  float: right;
+  font-size: 30px;
+  content: "\203A";
 }
 
 .pattern-fragment {
@@ -2178,4 +2192,65 @@ ul.tab li a:focus, .active, ul.tab li a.active:hover {
 
 .no-margins {
   margin: 0;
+}
+
+.example:before {
+  font-size: 16px;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0 0 30px 0;
+  overflow: auto;
+  font-size: 16px;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+.tab-link {
+  float: left;
+  background-color: #dee0e2;
+  border: 0 none;
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  top: 1px;
+  margin: 0.26316em 0.26316em 0.26316em 0 !important;
+  padding: 0.47368em 1em;
+}
+
+.tab-link-active {
+  background-color: #fff;
+  color: #0b0c0c;
+  position: relative;
+  text-decoration: none;
+  z-index: 5;
+  border: 1px solid #bfc1c3;
+  border-bottom: 1px solid transparent;
+  margin-top: 0px;
+  margin-bottom: 0 !important;
+  padding: 0.68421em 0.94737em 0.73684em;
+}
+
+.tab-link-active:focus {
+  background-color: white;
+}
+
+.tab-panes {
+  padding: 1em 0 0 0;
+  border-top: solid 1px #bfc1c3;
+  clear: both;
+  width: auto;
 }

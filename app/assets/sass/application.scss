@@ -45,3 +45,138 @@
   font-size: 24px !important;
   margin-top: 2px !important;
 }
+
+.column-three-quarters {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 641px) {
+  .column-three-quarters {
+    float: left;
+    width: 75%;
+  }
+}
+
+
+ul li {
+  margin-bottom: 20px;
+}
+
+ul.tab {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-right: 1px solid #ccc;
+  float: left;
+  width: 100%;
+  font-size: 16px;
+}
+
+ul.tab li {
+  margin-bottom: 0px;
+}
+
+ul.tab li a {
+  display: inline-block;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  display: block;
+}
+
+ul.tab li a:hover {
+  background-color: #dee0e2;
+  color: #005ea5;
+}
+
+ul.tab .disabled {
+  color: #BFC1C3;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:focus, .active, ul.tab li a.active:hover {
+  background-color: #005EA5;
+  color: #fff !important;
+  outline: 0;
+}
+
+.browse-panes ul.tab li a:after {
+    margin-top: -12px;
+    right: 10px;
+    float: right;
+    font-size: 30px;
+    content: "\203A";
+}
+
+.pattern-fragment {
+  margin-top: 0;
+}
+
+.no-margins {
+  margin: 0;
+}
+
+.example:before {
+  font-size: 16px;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0 0 30px 0;
+  overflow: auto;
+  font-size: 16px;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+
+.tab-link {
+  float: left;
+  background-color: #dee0e2;
+  border: 0 none;
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  top: 1px;
+  margin: 0.26316em 0.26316em 0.26316em 0 !important;
+  padding: 0.47368em 1em;
+}
+
+.tab-link-active {
+  background-color: #fff;
+  color: #0b0c0c;
+  position: relative;
+  text-decoration: none;
+  z-index: 5;
+  border: 1px solid #bfc1c3;
+  border-bottom: 1px solid transparent;
+  margin-top: 0px;
+  margin-bottom: 0 !important;
+  padding: 0.68421em 0.94737em 0.73684em;
+}
+
+.tab-link-active:focus {
+  background-color: white;
+}
+
+.tab-panes {
+  padding: 1em 0 0 0;
+  border-top: solid 1px #bfc1c3;
+  clear: both;
+  width: auto;
+}
+
